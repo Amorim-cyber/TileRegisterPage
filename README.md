@@ -1,27 +1,42 @@
-# RegisterPage
+# TileRegisterPage :framed_picture:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+#### INICIO
 
-## Development server
+Fala pessoal, este projeto consiste na elaboração de uma página que registra pedidos de pisos hidráulicos!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ele pega a ideia de um projeto anterior que elaborei, o TileLandingPage (https://github.com/Amorim-cyber/TileLandingPage). Explicando brevemente, o TileLandingPage divulga uma promoção de pisos hidráulicos. Para o usuário participar ele teria fazer um cadastro, contudo eu não coloquei uma responsividade para tal.
 
-## Code scaffolding
+Neste novo projeto vamos tentar dar uma interatividade ​a​o​ ​u​s​u​á​r​i​o​​, fazer com que a página "converse" com ele.​
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Vamos que vamos! :smile:
 
-## Build
+#### TECHS UTILIZADAS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Node.js
+* Angular CLI
+* Alguma IDE de sua escolha
 
-## Running unit tests
+#### TRILHA
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Vou deixar uma explicação um pouco mais detalhada do que eu fiz de um commit para outro
 
-## Running end-to-end tests
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>INITIAL COMMIT</strong></p>
+    <ul>
+        <li>Commit default do Angular quando criamos o projeto no terminal</li>
+    </ul>
+    <br>
+</div>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>COLOCANDO UMA FORMA INICIAL AOS COMPONENTES</strong></p>
+    <ul>
+        <li>Instalei no projeto o angular material para uma melhor estilização</li>
+        <li>Crie um modulo para guardar os componentes de estilo</li>
+        <li>Crie os componentes de formulário e de header</li>
+        <li>Coloquei as estruturas HTML em ambos os componentes</li>
+        <li>Coloquei um tratamento inicial aos campos do formulário</li>
+    </ul>
+    <br>
+</div>
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
