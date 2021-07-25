@@ -1,32 +1,81 @@
 <div class="main-div margin-top-50">
   <mat-card class="center width50">
-    <form [formGroup]="cadastro">
+    <form [formGroup]="cadastro" (ngSubmit)="save()" (ngReset)="reset()">
       <mat-card-content>
         <mat-form-field class="full-width">
-          <input matInput placeholder="Nome" name="name" formControlName="name">
+          <input matInput placeholder="Nome *" name="name" formControlName="name">
+          <mat-error *ngIf="validate.hasInvalidError(f.name,'required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.name,'minlength')">
+            Campo precisa ter no mínimo 2 caracteres
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.name,'maxlength')">
+            Campo precisa ter no máximo 156 caracteres
+          </mat-error>
         </mat-form-field>
         <mat-form-field class="full-width">
-          <input matInput placeholder="Celular para contato">
+          <input matInput placeholder="Celular para contato *"
+          type="tel" name="phone" formControlName="phone">
+          <mat-error *ngIf="validate.hasInvalidError(f.phone,'required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.phone,'pattern')">
+            Campo precisa ter 11 dígitos DDD+Número
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width" >
+          <input matInput placeholder="Endereço para entrega *" name="address" formControlName="address">
+          <mat-error *ngIf="validate.hasInvalidError(f.address,'required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.address,'minlength')">
+            Campo precisa ter no mínimo 2 caracteres
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.address,'maxlength')">
+            Campo precisa ter no máximo 256 caracteres
+          </mat-error>
         </mat-form-field>
         <mat-form-field class="full-width">
-          <input matInput placeholder="Endereço para entrega">
-        </mat-form-field>
-        <mat-form-field class="full-width">
-          <mat-select placeholder="Modelo do piso">
+          <mat-select placeholder="Modelo do piso *"formControlName="model">
             <mat-option value="modelo1">Modelo1</mat-option>
             <mat-option value="modelo2">Modelo2</mat-option>
             <mat-option value="modelo3">Modelo3</mat-option>
           </mat-select>
+          <mat-error *ngIf="validate.hasInvalidError(f.model,'required')">
+            Campo obrigatório
+          </mat-error>
         </mat-form-field>
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Largura (cm)">
+        <mat-form-field class="full-width" >
+          <input matInput placeholder="Comprimento (cm) *" type="number"
+          min="15" max="100" step="0.5" name="width" formControlName="width">
+          <mat-error *ngIf="validate.hasInvalidError(f.width,'required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.width,'min')">
+            Campo precisa ter no mínimo 15 centímetros
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.width,'max')">
+            Campo precisa ter no máximo 100 centímetros
+          </mat-error>
         </mat-form-field>
-        <mat-form-field class="full-width">
-          <input matInput placeholder="Comprimento (cm)">
+        <mat-form-field class="full-width" >
+          <input matInput placeholder="Altura (cm) *" type="number"
+          min="15" max="100" step="0.5" name="height" formControlName="height">
+          <mat-error *ngIf="validate.hasInvalidError(f.height,'required')">
+            Campo obrigatório
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.height,'min')">
+            Campo precisa ter no mínimo 15 centímetros
+          </mat-error>
+          <mat-error *ngIf="validate.hasInvalidError(f.height,'max')">
+            Campo precisa ter no máximo 100 centímetros
+          </mat-error>
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions>
         <button type="submit" color="accent" mat-raised-button>Registrar pedido</button>
+        <button type="reset" color="warn" mat-raised-button>Limpar campos</button>
       </mat-card-actions>
     </form>
 

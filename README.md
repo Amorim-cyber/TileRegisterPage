@@ -39,4 +39,14 @@ Vou deixar uma explicação um pouco mais detalhada do que eu fiz de um commit p
     </ul>
     <br>
 </div>
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>DEIXANDO O FORMULÁRIO RESPONSIVO</strong></p>
+    <ul>
+        <li>Coloquei messagens de erro para caso o usuário não digite os campos corretamente</li>
+        <li>Dependendo do erro as mensagens podem variar</li>
+        <li>Adicionei um botão que limpa todos os campos preenchidos</li>
+        <li>O botão de registro leva para um alerta de sucesso caso o usuário preencha tudo corretamente</li>
+    </ul>
+    <br>
+</div>
 
