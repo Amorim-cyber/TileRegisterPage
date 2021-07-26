@@ -13,7 +13,7 @@ Vamos que vamos! :smile:
 Segue o link para acessar a página:
 
 ```shell script
-https://amorim-cyber.github.io/TileRegisterPage/RegistreSeuPedido
+https://amorim-cyber.github.io/TileRegisterPage
 ```
 
 #### TECHS UTILIZADAS
