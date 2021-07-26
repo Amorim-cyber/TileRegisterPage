@@ -3,3 +3,24 @@
    0 6px 10px 0 rgb(0 0 0 / 14%),
     0 1px 18px 0 rgb(0 0 0 / 12%);
 }
+
+.bar{
+  background-color: rgba(88, 50, 8, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.listImages{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+img{
+  width: 30px;
+    height: 30px;
+}

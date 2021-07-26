@@ -2,7 +2,7 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-      background-color: #f8f8f8; }
+      background-color: #D0D0D0; }
 
 .main-div {
   display: flex;
@@ -26,10 +26,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 10px auto;
 }
 
-.width50 {
+.width {
   width: 50%;
 }
 
 .full-width {
   width: 100%;
+}
+
+
+@media screen and (max-width:1001px){
+  .width {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:551px){
+  .width {
+    width: 80%;
+  }
 }

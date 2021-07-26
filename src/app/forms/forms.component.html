@@ -1,5 +1,5 @@
 <div class="main-div margin-top-50">
-  <mat-card class="center width50">
+  <mat-card class="center width">
     <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="save()" (ngReset)="reset()">
       <mat-card-content>
         <mat-form-field class="full-width">
@@ -38,9 +38,9 @@
         </mat-form-field>
         <mat-form-field class="full-width">
           <mat-select placeholder="Modelo do piso *"formControlName="model">
-            <mat-option value="modelo1">Modelo1</mat-option>
-            <mat-option value="modelo2">Modelo2</mat-option>
-            <mat-option value="modelo3">Modelo3</mat-option>
+            <mat-option value="Ladrilhos centrais">Ladrilhos centrais</mat-option>
+            <mat-option value="Ladrilhos Contínuos">Ladrilhos Contínuos</mat-option>
+            <mat-option value="Florões">Florões</mat-option>
           </mat-select>
           <mat-error *ngIf="validate.hasInvalidError(f.model,'required')">
             Campo obrigatório
@@ -74,16 +74,7 @@
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions>
-        <!--<a [routerLink]="['Sucesso',
-        getValue('name'),
-        getValue('phone'),
-        getValue('address'),
-        getValue('model'),
-        getValue('width'),
-        getValue('height')]">
-          <button type="submit" color="accent" mat-raised-button>Registrar pedido</button>
-        </a>-->
-        <button type="submit" color="accent" mat-raised-button>Registrar pedido</button>
+        <button type="submit" class="brown-btn" mat-raised-button>Registrar pedido</button>
         <button type="reset" color="warn" mat-raised-button>Limpar campos</button>
       </mat-card-actions>
     </form>

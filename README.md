@@ -10,11 +10,43 @@ Neste novo projeto vamos tentar dar uma interatividade ​a​o​ ​u​s​u�
 
 Vamos que vamos! :smile:
 
+Segue o link para acessar a página:
+
+```shell script
+https://amorim-cyber.github.io/TileRegisterPage/RegistreSeuPedido
+```
+
 #### TECHS UTILIZADAS
 
 * Node.js
 * Angular CLI
 * Alguma IDE de sua escolha
+
+#### INTRUÇÕES
+
+Caso você queira rodar o site em sua máquina local siga os seguintes passos:
+
+1. Baixe os arquivos deste repositório
+
+2. Execute o comando `ng serve` em seu terminal dentro do diretório deste projeto
+
+   <img src="C:\Users\lucca\VTEX\register-page\img\passo2.PNG" style="border: solid grey; border-radius:4px"></img>
+
+3. Digite `http://localhost:4200/RegistreSeuPedido`  no seu navegador.
+
+<img src="C:\Users\lucca\VTEX\register-page\img\Passo3.PNG" style="border: solid grey; border-radius:4px"></img>
+
+#### PRONTO
+
+ A página está pronta para uso.
+
+<img src="img/Page.PNG" style="border: solid grey; border-radius:4px"></img>
+
+
+
+#### Observações importantes:
+
+* As páginas vão dar erro caso haja alteração no link, peço que não mexa nele.
 
 #### TRILHA
 
@@ -70,4 +102,17 @@ Vou deixar uma explicação um pouco mais detalhada do que eu fiz de um commit p
     </ul>
     <br>
 </div>
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>AJUSTANDO O ESTILO DAS PÁGINAS</strong></p>
+    <ul>
+        <li>Adicionei algumas imagens para o Header</li>
+        <li>Alterei as cores do header, fundo da página e do botão</li>
+        <li>Deixa a página responsiva para diversas telas</li>
+    </ul>
+    <br>
+</div>
+
+FIM DA TRILHA
+
+#### Forte Abraço! :smile:
 
