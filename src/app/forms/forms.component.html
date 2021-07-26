@@ -1,6 +1,6 @@
 <div class="main-div margin-top-50">
   <mat-card class="center width50">
-    <form [formGroup]="cadastro" (ngSubmit)="save()" (ngReset)="reset()">
+    <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="save()" (ngReset)="reset()">
       <mat-card-content>
         <mat-form-field class="full-width">
           <input matInput placeholder="Nome *" name="name" formControlName="name">
@@ -74,6 +74,15 @@
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions>
+        <!--<a [routerLink]="['Sucesso',
+        getValue('name'),
+        getValue('phone'),
+        getValue('address'),
+        getValue('model'),
+        getValue('width'),
+        getValue('height')]">
+          <button type="submit" color="accent" mat-raised-button>Registrar pedido</button>
+        </a>-->
         <button type="submit" color="accent" mat-raised-button>Registrar pedido</button>
         <button type="reset" color="warn" mat-raised-button>Limpar campos</button>
       </mat-card-actions>

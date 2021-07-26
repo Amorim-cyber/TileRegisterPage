@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ValidateFieldsService } from '../shared/formControl/validate-fields.service';
@@ -11,10 +12,34 @@ export class FormsComponent implements OnInit {
 
   cadastro!: FormGroup;
 
-  constructor(public validate: ValidateFieldsService,private fb: FormBuilder) { }
+  constructor(public validate: ValidateFieldsService,private fb: FormBuilder,private router: Router) { }
 
   get f() {
     return this.cadastro.controls;
+  }
+
+  getValue(txt: String){
+    switch(txt){
+      case 'name':{
+        return this.cadastro.value.name.replace(/ /gi,"_");
+      }
+      case 'phone':{
+        return this.cadastro.value.phone;
+      }
+      case 'address':{
+        return this.cadastro.value.address.replace(/ /gi,"_");
+      }
+      case 'model':{
+        return this.cadastro.value.model;
+      }
+      case 'width':{
+        return this.cadastro.value.width;
+      }
+      case 'height':{
+        return this.cadastro.value.height;
+      }
+    }
+
   }
 
   ngOnInit(): void{
@@ -34,7 +59,14 @@ export class FormsComponent implements OnInit {
       return;
     }
 
-    alert('SUCESSO!!\n\n' + JSON.stringify(this.cadastro.value, null, 4));
+    //alert('SUCESSO!!\n\n' + JSON.stringify(this.cadastro.value, null, 4));
+    this.router.navigateByUrl(`RegistreSeuPedido/Sucesso/"
+    ${this.cadastro.value.name.replace(/ /gi,"_")}/
+    ${this.cadastro.value.phone}/
+    ${this.cadastro.value.address.replace(/ /gi,"_")}/
+    ${this.cadastro.value.model}/
+    ${this.cadastro.value.width}/
+    ${this.cadastro.value.height}`);
   }
 
   reset(): void{

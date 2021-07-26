@@ -1,0 +1,31 @@
+<div class="main-div margin-top-50">
+  <mat-card class="center width50">
+    <div class="padding-10">
+      Pedido registrado com sucesso!
+    </div>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{panelOpenState ? 'Clique aqui para minimizar dados do seu pedido' :
+           'Clique aqui para visualizar dados do seu pedido'}}
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p><strong>Nome: </strong>{{name | replace: "\"":""}}</p>
+      <p><strong>Celular: </strong>{{phone}}</p>
+      <p><strong>Endereço: </strong>{{address}}</p>
+      <p><strong>Modelo: </strong>{{model}}</p>
+      <p><strong>Comprimento: </strong>{{width}} centímetros</p>
+      <p><strong>Altura: </strong>{{height}} centímetros</p>
+    </mat-expansion-panel>
+  </mat-card>
+
+
+</div>
+
+
+
+
+

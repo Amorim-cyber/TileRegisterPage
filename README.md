@@ -49,4 +49,25 @@ Vou deixar uma explicação um pouco mais detalhada do que eu fiz de um commit p
     </ul>
     <br>
 </div>
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>COLOCANDO UMA FORMA INICIAL AOS COMPONENTES</strong></p>
+    <ul>
+        <li>Instalei no projeto o angular material para uma melhor estilização</li>
+        <li>Crie um modulo para guardar os componentes de estilo</li>
+        <li>Crie os componentes de formulário e de header</li>
+        <li>Coloquei as estruturas HTML em ambos os componentes</li>
+        <li>Coloquei um tratamento inicial aos campos do formulário</li>
+    </ul>
+    <br>
+</div>
+<div style="background-color: #E8E8E8; border-radius: 3px;">
+   <p><strong>ADICIONANDO UMA PÁGINA DE SUCESSO</strong></p>
+    <ul>
+        <li>Foi adicionado uma página de sucesso para caso os dados sejam preenchidos corretamente</li>
+        <li>A página consiste em uma mensagem principal e um botão que mostra o registro do pedido</li>
+        <li>Também foi criado um pipe para tratamento de dados pontuais</li>
+        <li>O componente dessa página está localizado na pasta Success</li>
+    </ul>
+    <br>
+</div>
 

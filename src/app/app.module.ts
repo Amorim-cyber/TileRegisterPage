@@ -8,16 +8,20 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsComponent } from './forms/forms.component';
 import { MaterialModule } from './shared/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SuccessComponent } from './success/success.component';
+import { AppPipeModule } from './shared/pipe/app-pipe.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormsComponent,
-    NavBarComponent
+    NavBarComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AppPipeModule,
     MaterialModule,
     BrowserAnimationsModule,
     FormsModule,
